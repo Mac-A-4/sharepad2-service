@@ -1,0 +1,22 @@
+{
+    "name": "sharepad2-service",
+    "version": "1.0.0",
+    "description": "Service for Sharepad2",
+    "main": "./build/index.js",
+    "types": "./build/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "postinstall": "npm run build"
+    },
+    "keywords": [],
+    "author": "Malcolm Alvarez",
+    "license": "ISC",
+    "dependencies": {
+        "@types/express": "^4.17.15",
+        "@types/node": "^18.11.18",
+        "express": "^4.18.2",
+        "sharepad2-model": "github:Mac-A-4/sharepad2-model",
+        "typescript": "^4.9.4",
+        "zod": "^3.20.2"
+    }
+}
