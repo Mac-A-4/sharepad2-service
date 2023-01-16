@@ -1,4 +1,5 @@
 import * as express from 'express'
+import * as cors from 'cors'
 import {
     ConnectSessionRequestSchema,
     ConnectSessionResponseSchema,
@@ -62,6 +63,8 @@ import {
 const app = express()
 
 const manager = new Manager()
+
+app.use(cors())
 
 app.use(express.json())
 
