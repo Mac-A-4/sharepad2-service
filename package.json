@@ -4,6 +4,9 @@
     "description": "Service for Sharepad2",
     "main": "./build/index.js",
     "types": "./build/index.d.ts",
+    "bin": {
+        "sharepad2-service": "./cli.js"
+    },
     "scripts": {
         "build": "tsc",
         "postinstall": "npm run build"
