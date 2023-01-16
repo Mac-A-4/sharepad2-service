@@ -68,7 +68,7 @@ app.use(express.json())
 function route(fn: (body: any) => Promise<any>): (request: any, response: any) => Promise<void> {
     return async function(request: any, response: any) {
         try {
-            const responseBody = fn(request.body)
+            const responseBody = await fn(request.body)
             response.status(200)
             response.json(responseBody)
             return
